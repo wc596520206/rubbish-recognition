@@ -1,0 +1,36 @@
+{
+  "train": {
+    "lr": 0.0001,
+    "batch_size": 20,
+    "epochs": "100",
+    "loss": "categorical_crossentropy",
+    "train_dir": "E:\\3业余资料\\10人脸性别分类\\data\\2垃圾分类\\训练",
+    "validation_dir": "E:\\3业余资料\\10人脸性别分类\\data\\2垃圾分类\\测试",
+    "model_file_path": "E:\\3业余资料\\10人脸性别分类\\code\\model/rubbish-MobileNet-{epoch:02d}-{val_acc:.2f}.hdf5"
+  },
+  "infer": {
+    "pre_process": "false"
+  },
+  "global": {
+    "im_size": 224,
+    "model_type": "MobileNet",
+    "class_ch": [
+      "玻璃",
+      "废纸",
+      "塑料",
+      "铁",
+      "纸盒"
+    ],
+    "class_mode": "categorical",
+    "class_num": 5,
+    "log_path": "log\\rubbshi",
+    "task": "rubbish"
+  },
+  "label_dict": {
+    "0": "玻璃",
+    "1": "废纸",
+    "2": "塑料",
+    "3": "铁",
+    "4": "纸盒"
+  }
+}
